@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18bd306c-4107-4f3a-9782-b68ab7f474fa" name="Default Changelist" comment="" />
+    <list default="true" id="18bd306c-4107-4f3a-9782-b68ab7f474fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Box.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MoreInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YUKiuQfDYTV8okdzlrCuIRtcfs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -51,8 +70,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582991862766</updated>
-      <workItem from="1582991864619" duration="321000" />
+      <workItem from="1582991864619" duration="2238000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2539" height="405" key="GridCell.Tab.0.bottom" timestamp="1582994621121">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="405" key="GridCell.Tab.0.bottom/-1920.836.1920.1080/2560.1024.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1582994621121" />
+    <state width="2539" height="405" key="GridCell.Tab.0.center" timestamp="1582994621100">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="405" key="GridCell.Tab.0.center/-1920.836.1920.1080/2560.1024.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1582994621100" />
+    <state width="2539" height="405" key="GridCell.Tab.0.left" timestamp="1582994621093">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="405" key="GridCell.Tab.0.left/-1920.836.1920.1080/2560.1024.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1582994621093" />
+    <state width="2539" height="405" key="GridCell.Tab.0.right" timestamp="1582994621110">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="405" key="GridCell.Tab.0.right/-1920.836.1920.1080/2560.1024.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1582994621110" />
   </component>
 </project>
