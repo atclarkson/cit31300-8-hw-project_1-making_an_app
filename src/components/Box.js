@@ -1,111 +1,29 @@
-import React, {useState, useEffect} from "react";
-import data from "../Data";
-import Box from "./Box";
+import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTvRetro, faRabbitFast, faGamepadAlt, faCheckDouble} from '@fortawesome/pro-duotone-svg-icons'
+import {faGem} from '@fortawesome/pro-duotone-svg-icons'
+import {Link} from 'react-router-dom';
 
-const Wrapper = () => {
+const Box = (props) => {
 
-    let [ani, setAni] = useState(true);
-    let [game, setGame] = useState(true);
-    let [tv, setTv] = useState(true);
-    let [all, setAll] = useState(true);
-
-    useEffect(() => {
-        if (all) {
-            setAni(true);
-            setGame(true);
-            setTv(true);
-        }
-    }, [all]);
-
-
-    const styleOn = {
-        backgroundColor: "blue",
-        color: "white"
+    const style = {
+        color: "#1cbcff"
     };
 
-    const styleOff = {
-        backgroundColor: "white"
-    };
-
-    useEffect(() => {
-        if (!ani || !game || !tv) {
-            setAll(false);
-        }
-        if (ani && game && tv) {
-            setAll(true);
-        }
-    }, [ani, game, tv]);
-
-
-    let boxes = data.map(el => {
-            switch (el.category) {
-                case "animation":
-                    if (ani) {
-                        return (
-                            <Box
-                                key={el.name}
-                                name={el.name}
-                                image={el.img}
-                                cat={el.category}
-                                val={el.value}/>
-                        );
-                    }
-                    return null;
-                case "games":
-                    if (game) {
-                        return (
-                            <Box
-                                key={el.name}
-                                name={el.name}
-                                image={el.img}
-                                cat={el.category}
-                                val={el.value}/>
-                        );
-                    }
-                    return null;
-                case "television":
-                    if (tv) {
-                        return (
-                            <Box
-                                key={el.name}
-                                name={el.name}
-                                image={el.img}
-                                cat={el.category}
-                                val={el.value}/>
-                        );
-                    }
-                    return null;
-                default:
-                    return null;
-            }
-        }
-    );
-
+    const valueGems = [];
+    for (let i = 0; i < props.val; i++) {
+        valueGems.push(<FontAwesomeIcon key={i} style={style} icon={faGem}/>);
+    }
 
     return (
-        <div className='Wrapper'>
-            <nav>
-                <ul>
-                    <li style={ani ? styleOn : styleOff} onClick={() => setAni(!ani)}><FontAwesomeIcon
-                        icon={faRabbitFast}/> Animation
-                    </li>
-                    <li style={game ? styleOn : styleOff} onClick={() => setGame(!game)}><FontAwesomeIcon
-                        icon={faGamepadAlt}/> Games
-                    </li>
-                    <li style={tv ? styleOn : styleOff} onClick={() => setTv(!tv)}><FontAwesomeIcon
-                        icon={faTvRetro}/> TV
-                    </li>
-                    <li style={all ? styleOn : styleOff} onClick={() => setAll(!all)}><FontAwesomeIcon
-                        icon={faCheckDouble}/> All
-                    </li>
-                </ul>
-            </nav>
-            <div className="boxes">{boxes}</div>
-
-        </div>
+        <Link to={`/${props.name}`} className='BoxLink'>
+            <div className='Box'>
+                <h1>{props.name}</h1>
+                <h2>{props.cat}</h2>
+                {valueGems}
+                <img src={props.image} alt={props.name}/>
+            </div>
+        </Link>
     )
 };
 
-export default Wrapper
+export default Box

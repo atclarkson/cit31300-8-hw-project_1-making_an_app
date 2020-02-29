@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import data from "../Data";
 import Box from "./Box";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTvRetro, faRabbitFast, faGamepadAlt, faCheckDouble} from '@fortawesome/pro-duotone-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faTv, faFrog, faGamepad, faCheckDouble} from '@fortawesome/free-solid-svg-icons';
 
 const Wrapper = () => {
 
@@ -89,13 +89,13 @@ const Wrapper = () => {
             <nav>
                 <ul>
                     <li style={ani ? styleOn : styleOff} onClick={() => setAni(!ani)}><FontAwesomeIcon
-                        icon={faRabbitFast}/> Animation
+                        icon={faFrog}/> Animation
                     </li>
                     <li style={game ? styleOn : styleOff} onClick={() => setGame(!game)}><FontAwesomeIcon
-                        icon={faGamepadAlt}/> Games
+                        icon={faGamepad}/> Games
                     </li>
                     <li style={tv ? styleOn : styleOff} onClick={() => setTv(!tv)}><FontAwesomeIcon
-                        icon={faTvRetro}/> TV
+                        icon={faTv}/> TV
                     </li>
                     <li style={all ? styleOn : styleOff} onClick={() => setAll(!all)}><FontAwesomeIcon
                         icon={faCheckDouble}/> All
