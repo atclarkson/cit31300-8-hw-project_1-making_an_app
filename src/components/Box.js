@@ -14,13 +14,33 @@ const Box = (props) => {
         valueGems.push(<FontAwesomeIcon key={i} style={style} icon={faGem}/>);
     }
 
+    let catStyle = {backgroundColor: "white"};
+
+    switch (props.cat) {
+        case "animation":
+            catStyle = {backgroundColor: "#313896", color: "white"};
+            break;
+        case "games":
+            catStyle = {backgroundColor: "#00d7ff"};
+            break;
+        case "television":
+            catStyle = {backgroundColor: "#9f32b2", color: "white"};
+            break;
+        default:
+            break;
+    }
+
     return (
         <Link to={`/${props.name}`} className='BoxLink'>
             <div className='Box'>
-                <h1>{props.name}</h1>
-                <h2>{props.cat}</h2>
-                {valueGems}
+                <h2 style={catStyle}>{props.cat}</h2>
+                <div className="image-box">
                 <img src={props.image} alt={props.name}/>
+                </div>
+                <h1>{props.name}</h1>
+
+                {valueGems}
+
             </div>
         </Link>
     )
